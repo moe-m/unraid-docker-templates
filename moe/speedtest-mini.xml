@@ -14,7 +14,7 @@
   </Overview>
   <Support> A suport URL</Support>
   <Registry>https://registry.hub.docker.com/u/mlabbe/speedtest-mini/</Registry>
-  <GitHub>https://github.com/michellabbe/docker-speedtest-mini</GitHub>
+  <GitHub>https://github.com/michellabbe/docker-speedtest-mini/</GitHub>
   <Repository>mlabbe/speedtest-mini/</Repository>
   <Project>https://plex.tv/</Project>
   <BindTime>true</BindTime>
