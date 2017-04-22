@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Name>speedtest</Name>
+  <Description>
+   A description[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
+https://gist.github.com/sparanoid/abb6e26d968accef9aa2
+  </Description>
+  <Overview>
+   A Long overview
+  </Overview>
+  <Support> A suport URL</Support>
+  <Registry>https://registry.hub.docker.com/u/mlabbe/speedtest-mini/</Registry>
+  <GitHub>https://github.com/michellabbe/docker-speedtest-mini/</GitHub>
+  <Repository>mlabbe/speedtest-mini</Repository>
+  <Project>http://beta.speedtest.net/mini</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8010</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment> 
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <WebUI>http://[IP]:[PORT:8010]/</WebUI>
+  <Icon>http://c.speedtest.net/images/apple-touch-icon.png</Icon>
+  <DonateText>Donate Text</DonateText>
+  <DonateLink>Donate Link</DonateLink>
+  <DonateImg>Donate image</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
