@@ -13,7 +13,7 @@
    A Long overview
   </Overview>
   <Support> A suport URL</Support>
-  <Registry>https://hub.docker.com/r/mlabbe/speedtest-mini/</Registry>
+  <Registry>https://registry.hub.docker.com/u/mlabbe/speedtest-mini/</Registry>
   <GitHub>https://github.com/michellabbe/docker-speedtest-mini</GitHub>
   <Repository>moe/speedtest-mini</Repository>
   <Project>https://plex.tv/</Project>
