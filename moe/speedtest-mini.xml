@@ -2,12 +2,12 @@
 <Containers>
 <Beta>False</Beta>
 <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>Speedtest-mini</Name>
+  <Name>speedtest</Name>
   <Description>
    A description[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
     [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
-
+https://gist.github.com/sparanoid/abb6e26d968accef9aa2
   </Description>
   <Overview>
    A Long overview
@@ -39,7 +39,7 @@
       <Value>100</Value>
     </Variable>
   </Environment>
-  <WebUI>http://[IP]:[PORT:8010]/web/index.html</WebUI>
+  <WebUI>http://[IP]:[PORT:8010]/</WebUI>
   <Icon>http://www.speedtest.net/images/speedtestmini.png</Icon>
   <DonateText>Donate Text</DonateText>
   <DonateLink>Donate Link</DonateLink>
