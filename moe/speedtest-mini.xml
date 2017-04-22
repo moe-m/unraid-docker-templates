@@ -2,7 +2,7 @@
 <Containers>
 <Beta>False</Beta>
 <Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>Speedtest-mini/Name>
+  <Name>Speedtest-mini</Name>
   <Description>
    A description[br][br]
     [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
