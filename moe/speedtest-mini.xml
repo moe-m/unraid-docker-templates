@@ -29,15 +29,7 @@
       </Port>
     </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>TRANS_DIR</Name>
-      <Value>/config/transcode</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
+  <Environment> 
     <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
