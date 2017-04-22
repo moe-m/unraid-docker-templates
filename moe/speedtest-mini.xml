@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+<Beta>False</Beta>
+<Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
+  <Name>Speedtest-mini/Name>
+  <Description>
+   A description[br][br]
+    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
+
+  </Description>
+  <Overview>
+   A Long overview
+  </Overview>
+  <Support> A suport URL</Support>
+  <Registry>https://hub.docker.com/r/mlabbe/speedtest-mini/</Registry>
+  <GitHub>https://github.com/michellabbe/docker-speedtest-mini</GitHub>
+  <Repository>moe/speedtest-mini</Repository>
+  <Project>https://plex.tv/</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8010</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>TRANS_DIR</Name>
+      <Value>/config/transcode</Value>
+    </Variable>
+    <Variable>
+      <Name>UMASK</Name>
+      <Value>000</Value>
+    </Variable>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <WebUI>http://[IP]:[PORT:8010]/web/index.html</WebUI>
+  <Icon>http://www.speedtest.net/images/speedtestmini.png</Icon>
+  <DonateText>Donate Text</DonateText>
+  <DonateLink>Donate Link</DonateLink>
+  <DonateImg>Donate image</DonateImg>
+  <ExtraParams></ExtraParams>
+</Containers>
+
