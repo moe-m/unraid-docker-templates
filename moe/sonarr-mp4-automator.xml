@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <TemplateURL>https://raw.githubusercontent.com/moe-m/unraid-docker-templates/master/moe/sonarr.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/moe-m/unraid-docker-templates/master/moe/sonarr-mp4-automator.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Downloaders: MediaApp:Video</Category>
   <Date>2017-04-17</Date>
