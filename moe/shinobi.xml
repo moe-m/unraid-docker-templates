@@ -33,8 +33,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8089</HostPort>
-        <ContainerPort>8080</ContainerPort>
+        <HostPort>8083</HostPort>
+        <ContainerPort>8083</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
 
