@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <TemplateURL>https://raw.githubusercontent.com/moe-m/unraid-docker-templates/master/moe/shinobi.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Tools / Utilities</Category>
+  <Date>2019-10-02</Date>
+  <Name>cronicle</Name>
+
+  <Support>http://lime-technology.com/forum/index.php?topic=43601.0</Support>
+  <Description>A simple Node.JS, distributed task scheduler and runner with a web based UI. https://github.com/jhuckaby/Cronicle&#13;
+  [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&amp;#13;&#13;
+  [b]/opt/cronicle/data[/b] Data directory ex. /mnt/user/appdata/cronicle/data [br]&amp;#13;&#13;
+  [b]/opt/cronicle/logs[/b] Logs directory ex. /mnt/user/appdata/cronicle/logs [br]&amp;#13;&#13;
+  [b]/opt/cronicle/Conf[/b] Conf directory ex. /mnt/user/appdata/cronicle/conf [br]&amp;#13;&#13;
+  [b]/opt/cronicle/plugins[/b] Plugins directory ex. /mnt/user/appdata/cronicle/plugins [br]&amp;#13;&#13;
+
+  [br][br][b][u][span style='color: #E80000;']Environment Variables[/span][/u][/b][br]&amp;#13;&#13;
+
+      See https://github.com/jhuckaby/Cronicle#environment-variables
+
+  [b]CRONICLE_mail_options__secure[/b] Default = 1 [br]&amp;#13;&#13;
+  [b]CRONICLE_mail_options__auth__user[/b] Email Address[br]&amp;#13;&#13;
+  [b]CRONICLE_mail_options__auth__pass[/b] Email Password[br]&amp;#13;&#13;
+  [b]CRONICLE_email_from[/b] Email Address to send from, should be same as CRONICLE_mail_options__auth__user[br]&amp;#13;&#13;
+    [b]CRONICLE_smtp_hostname[/b] Email server ex. smtp.gmail.com [br]&amp;#13;&#13;
+    [b]CRONICLE_smtp_port[/b] Email server port ex. 465 (TLS Gmail) br]&amp;#13;&#13;
+
+
+
+  [b]8989[/b] : The web-interface. [br]</Description>
+  <Project>https://cronicle.net</Project>
+  <Overview>A simple Node.JS, distributed task scheduler and runner with a web based UI. https://github.com/jhuckaby/Cronicle</Overview>
+  <Registry>https://hub.docker.com/r/moe1507/chronicle-alpine-npm-docker/</Registry>
+  <Repository>moe1507/chronicle-alpine-npm-docker</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+         <Variable>
+      <Name>CRONICLE_mail_options__secure</Name>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+    <Name>CRONICLE_mail_options__auth__user</Name>
+    <Value></Value>
+    </Variable>
+
+      <Variable>
+    <Name>CRONICLE_mail_options__auth__pass</Name>
+    <Value></Value>
+    </Variable>
+  <Variable>
+    <Name>CRONICLE_email_from</Name>
+    <Value></Value>
+    </Variable>
+
+    <Variable>
+    <Name>CRONICLE_smtp_hostname</Name>
+    <Value>smtp.gmail.com</Value>
+    </Variable>
+
+    <Variable>
+    <Name>CRONICLE_smtp_port</Name>
+    <Value>465</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3012</HostPort>
+        <ContainerPort>3012</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/downloads/cronicle/data</HostDir>
+      <ContainerDir>/opt/cronicle/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+       <Volume>
+      <HostDir>/mnt/user/downloads/cronicle/logs</HostDir>
+      <ContainerDir>/opt/cronicle/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+        <Volume>
+      <HostDir>/mnt/user/downloads/cronicle/conf</HostDir>
+      <ContainerDir>/opt/cronicle/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+      <Volume>
+      <HostDir>/mnt/user/downloads/cronicle/plugins</HostDir>
+      <ContainerDir>/opt/cronicle/plugins</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>0.8.31</Version>
+  <WebUI>http://[IP]:[PORT:3012]/</WebUI>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+<BaseImage>node:10.16</BaseImage>
+</Container>
